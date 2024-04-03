@@ -7,8 +7,8 @@
 int main() {
 
   int segundos;
-  int horas;
-  int minutos;
+  float horas;
+  float minutos;
 
   printf("Digite os segundos: ");
   int deu_certo = scanf("%i", &segundos);
@@ -16,9 +16,9 @@ int main() {
   horas = segundos / 3600;
   minutos = (segundos % 3600) / 60;
 
-  printf("O tempo é %i\n", horas, "horas", minutos, "minutos", segundos, "segundos");
-  
-  
+  printf("O tempo em horas é: %f\n ", horas);
+  printf("O tempo em minutos é: %f\n ", minutos);
+  printf("O tempo em segundos é: %i\n ", segundos);
 
   return 0;
 }
